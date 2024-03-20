@@ -14,17 +14,17 @@ spec:
       app: mongodb
       project: roboshop
       tier: db
-template:
-  metadata:
-    labels:
-    app: mongodb
-    project: roboshop
-    tier: db
-  spec:
-    containers:
-    - name: mongodb
-      image: abdulahquraishi/mongodb:v1
-      imagePullPolicy: Always
+  template:
+    metadata:
+      labels:
+      app: mongodb
+      project: roboshop
+      tier: db
+    spec:
+      containers:
+      - name: mongodb
+        image: abdulahquraishi/mongodb:v1
+        imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
