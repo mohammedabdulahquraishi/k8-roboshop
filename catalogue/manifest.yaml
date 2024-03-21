@@ -33,6 +33,9 @@ spec:
       - name: catalogue
         image: abdulahquraishi/catalogue:v1
         imagePullPolicy: Always
+        envFrom:
+        - configMapRef:
+            name: catalogue
 ---
 apiVersion: v1
 kind: Service
