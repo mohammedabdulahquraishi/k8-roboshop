@@ -18,13 +18,13 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabels:
+    matchLabels: # these labels are used to find the pods
       app: catalogue
       project: roboshop
       tier: app
-  template: 
+  template:
     metadata:
-      labels:
+      labels: # these labels are pod labels
         app: catalogue
         project: roboshop
         tier: app
